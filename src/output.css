@@ -12,7 +12,9 @@
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-medium: 500;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -182,11 +184,17 @@
   .mt-100 {
     margin-top: calc(var(--spacing) * 100);
   }
+  .mt-\[1\] {
+    margin-top: 1;
+  }
   .mt-\[4\] {
     margin-top: 4;
   }
   .mt-\[5\] {
     margin-top: 5;
+  }
+  .mt-\[10\] {
+    margin-top: 10;
   }
   .mt-\[10px\] {
     margin-top: 10px;
@@ -214,6 +222,9 @@
   }
   .mt-\[100\] {
     margin-top: 100;
+  }
+  .mt-\[100p\] {
+    margin-top: 100p;
   }
   .mt-\[100px\] {
     margin-top: 100px;
@@ -458,6 +469,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
   .gap-\[0px\] {
     gap: 0px;
   }
@@ -484,6 +498,12 @@
   }
   .gap-\[4px\] {
     gap: 4px;
+  }
+  .gap-\[5\] {
+    gap: 5;
+  }
+  .gap-\[5px\] {
+    gap: 5px;
   }
   .gap-\[10\] {
     gap: 10;
@@ -539,8 +559,17 @@
   .gap-\[45px\] {
     gap: 45px;
   }
+  .gap-\[50\] {
+    gap: 50;
+  }
+  .gap-\[50p\] {
+    gap: 50p;
+  }
   .gap-\[50px\] {
     gap: 50px;
+  }
+  .gap-\[75px\] {
+    gap: 75px;
   }
   .gap-\[80px\] {
     gap: 80px;
@@ -800,6 +829,9 @@
   .pt-\[1\] {
     padding-top: 1;
   }
+  .pt-\[3\] {
+    padding-top: 3;
+  }
   .pt-\[4\] {
     padding-top: 4;
   }
@@ -808,6 +840,12 @@
   }
   .pt-\[10px\] {
     padding-top: 10px;
+  }
+  .pt-\[30\] {
+    padding-top: 30;
+  }
+  .pt-\[30p\] {
+    padding-top: 30p;
   }
   .pt-\[30px\] {
     padding-top: 30px;
@@ -827,8 +865,26 @@
   .pt-\[50px\] {
     padding-top: 50px;
   }
+  .pb-\[0px\] {
+    padding-bottom: 0px;
+  }
+  .pb-\[1-0px\] {
+    padding-bottom: 1-0px;
+  }
   .pb-\[5\] {
     padding-bottom: 5;
+  }
+  .pb-\[10px\] {
+    padding-bottom: 10px;
+  }
+  .pb-\[30\] {
+    padding-bottom: 30;
+  }
+  .pb-\[30p\] {
+    padding-bottom: 30p;
+  }
+  .pb-\[30px\] {
+    padding-bottom: 30px;
   }
   .pb-\[50\] {
     padding-bottom: 50;
@@ -838,6 +894,9 @@
   }
   .pb-\[50px\] {
     padding-bottom: 50px;
+  }
+  .pb-\[100px\] {
+    padding-bottom: 100px;
   }
   .text-center {
     text-align: center;
@@ -867,6 +926,9 @@
   .text-\[20px\] {
     font-size: 20px;
   }
+  .text-\[23px\] {
+    font-size: 23px;
+  }
   .text-\[25px\] {
     font-size: 25px;
   }
@@ -875,6 +937,9 @@
   }
   .text-\[40px\] {
     font-size: 40px;
+  }
+  .text-\[45px\] {
+    font-size: 45px;
   }
   .text-\[50pc\] {
     font-size: 50pc;
@@ -885,13 +950,24 @@
   .text-\[60px\] {
     font-size: 60px;
   }
+  .text-\[300px\] {
+    font-size: 300px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .text-\[\#094B72\] {
     color: #094B72;
@@ -938,6 +1014,12 @@
   .text-\[20p\] {
     color: 20p;
   }
+  .text-\[23\] {
+    color: 23;
+  }
+  .text-\[23p\] {
+    color: 23p;
+  }
   .text-\[30\] {
     color: 30;
   }
@@ -955,6 +1037,12 @@
   }
   .text-\[50p\] {
     color: 50p;
+  }
+  .text-\[300\] {
+    color: 300;
+  }
+  .text-\[300p\] {
+    color: 300p;
   }
   .text-\[g\] {
     color: g;
@@ -1034,6 +1122,11 @@
   .lg\:mt-\[120px\] {
     @media (width >= 64rem) {
       margin-top: 120px;
+    }
+  }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
     }
   }
   .lg\:flex {
@@ -1186,6 +1279,16 @@
       gap: 40px;
     }
   }
+  .lg\:gap-\[50px\] {
+    @media (width >= 64rem) {
+      gap: 50px;
+    }
+  }
+  .lg\:gap-\[75px\] {
+    @media (width >= 64rem) {
+      gap: 75px;
+    }
+  }
   .lg\:rounded-\[25px\] {
     @media (width >= 64rem) {
       border-radius: 25px;
@@ -1201,9 +1304,20 @@
       padding: 50px;
     }
   }
+  .lg\:pb-\[100px\] {
+    @media (width >= 64rem) {
+      padding-bottom: 100px;
+    }
+  }
   .lg\:text-start {
     @media (width >= 64rem) {
       text-align: start;
+    }
+  }
+  .lg\:text-2xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
   .lg\:text-\[20px\] {
